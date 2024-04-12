@@ -1,23 +1,24 @@
+Hier ist die Übersetzung:
+
 # Switch Logo Patcher
 
-Creates the IPS patches needed to replace the Switch logo on boot.
+Erstellt die IPS-Patches, die benötigt werden, um das Switch-Logo beim Start zu ersetzen.
 
-The logo you want to change the Switch logo to must be the same size as the original logo, which is 308x350. Anything else and the program won't let you progress.
+Das Logo, das du als Switch-Logo verwenden möchtest, muss die gleiche Größe wie das Originallogo haben, nämlich 308x350 Pixel. Andernfalls lässt dich das Programm nicht fortfahren.
 
-You don't need to dump the original logo to use this, but if you don't specify the original logo, each patch will be 400+ KiB.
+Du musst das Originallogo nicht dumpen, um dies zu verwenden, aber wenn du das Originallogo nicht angibst, werden die Patches jeweils über 400 KiB groß.
 
-### Usage
+### Verwendung
 
 ```
-usage: gen_patches.py [-h] [-o OLD_LOGO] patches_dir new_logo
+Verwendung: gen_patches.py [-h] [-o OLD_LOGO] patches_dir new_logo
 
-positional arguments:
-  patches_dir           The directory where the generated patches will be
-                        dumped
-  new_logo              The new logo image
+Positionale Argumente:
+  patches_dir           Das Verzeichnis, in dem die generierten Patches abgelegt werden
+  new_logo              Das neue Logobild
 
-optional arguments:
-  -h, --help            show this help message and exit
+Optionale Argumente:
+  -h, --help            Zeige diese Hilfe-Meldung und beende das Programm
   -o OLD_LOGO, --old_logo OLD_LOGO
-                        The original logo image
+                        Das Originallogobild
 ```
